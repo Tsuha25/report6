@@ -5,5 +5,7 @@ public class Main {
         //System.out.println("Hello"); jarファイルを生成できているかを最初に確認するためのHello
 
         RPG_Job job1 = new RPG_Job();
+        job1.Job_Choice();
+        job1.show_param();
     }
 }
