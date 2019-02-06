@@ -4,17 +4,22 @@ import java.util.Scanner;
 
 
 public class RPG_Job {
-    String name;
-    int hitpoint;
-    int attack;
-    int magicattack;
-    int defense;
-    int magicdefense;
+    /**
+     * ジョブを作成するためのプログラムです。
+     *
+     */
+    String name;int hitpoint;
+    int attack;int magicattack;
+    int defense;int magicdefense;
 
     public RPG_Job(){
         System.out.println("ジョブの作成をします。");
     }
 
+    /**
+     *ジョブを選択するメソッドです。
+     *
+     */
     public void Job_Choice(){
         System.out.println("ジョブを選択してください。\n１：戦士　２：魔道士　３：赤魔道士");
         System.out.println("数字を入力して選択できます。");
@@ -39,6 +44,10 @@ public class RPG_Job {
 
     }
 
+    /**
+     * パラメータを表示するためのメソッドです。
+     *
+     */
     public void show_param(){
         System.out.println("パラメータを表示します。");
         String str =  String.format("ジョブ：%s HP:%d 攻撃力：%d 魔法攻撃力：%d 防御力：%d 魔法防御力：%d",name,hitpoint,attack,magicattack,defense,magicdefense);
